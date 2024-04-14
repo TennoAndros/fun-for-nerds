@@ -1,27 +1,39 @@
-# FunForNerds
+# Fun for Nerds - Angular Game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+Welcome to "Fun for Nerds"! This game tests your understanding of Angular framework's Input and Output concepts within Components.
 
-## Development server
+## Game Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The game consists of 3 Components:
 
-## Code scaffolding
+1. **InputWordComponent**: Here, the user starts typing a word in an HTML input element. Depending on the length of the word, it is "considered" to be passed as Input to either the `EvenLengthWordsComponent` or the `OddLengthWordsComponent`.
+2. **EvenLengthWordsComponent and OddLengthWordsComponent**: These components display words entered by the user. The words are displayed in red color based on their length, alternating between these two components. When the user presses the "Submit" button, the word is "locked" into the component corresponding to its length.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to Play
 
-## Build
+1. Start typing a word in the input field.
+2. Depending on the length of the word, it will appear in one of the word display components.
+3. Words are displayed in red until the user submits them.
+4. Press "Submit" to lock the word into the respective component.
+5. The game keeps track of the words you've locked so far.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+To run this game locally:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone this repository.
+2. Navigate to the project directory.
+3. Run `npm install` to install dependencies.
+4. Run `ng serve` to start the development server.
+5. Open your browser and navigate to `http://localhost:4200/`.
+6. Start playing and have fun!
 
-## Running end-to-end tests
+## Technologies Used
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Angular
+- HTML
+- CSS
 
-## Further help
+## Credits
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This game is created by Andreas A.
