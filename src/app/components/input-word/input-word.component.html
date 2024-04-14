@@ -1,0 +1,18 @@
+<div class="mt-3">
+  <div class="row">
+    <div class="col">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control rounded" aria-label="input" (input)="onInputChange($event)" />
+        <button class="btn btn-primary ms-2 rounded" type="button" (click)="onSubmit()">Submit</button>
+      </div>
+      <div class="row">
+        <div class="col">
+          <app-even-length-words [receivedValue]="evenValue" [evenWord]="evenWord"></app-even-length-words>
+        </div>
+        <div class="col">
+          <app-odd-length-words [receivedValue]="oddValue" [oddWord]="oddWord"></app-odd-length-words>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

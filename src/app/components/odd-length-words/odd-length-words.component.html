@@ -1,0 +1,13 @@
+<h3>Odd Length Words</h3>
+<ul class="list-group">
+    <span class="text-danger text-truncate">
+        {{ receivedValue }}
+    </span>
+    @if(oddWord.length === 0 ) {
+    <span class="text-danger border-primary rounded">No odd length words</span>
+    } @else {
+    @for(word of oddWord; track word ) {
+    <li class="list-group-item text-danger border-primary rounded">{{ word }}</li>
+    }
+    }
+</ul>
